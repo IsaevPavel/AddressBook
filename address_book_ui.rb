@@ -9,13 +9,13 @@ development_configuration = database_configuration["development"]
 ActiveRecord::Base.establish_connection(development_configuration)
 
 def welcome
-  puts "NO so many things left to be done! Welcome"
+  puts "Welcome to awesome address-book!"
   main
 end
 def main
   choice=nil
   until choice == 'exit'
-    puts "Press 'l' to list your contacts, 'a' to add a date of new contacts, 'c' to edit, or 'd' to delete contact"
+    puts "Press 'a' to add a date of new contacts, 'l' to list your contacts, 'c' to edit, or 'd' to delete contact"
     puts "Press 'exit' to exit."
     choice=gets.chomp
     case choice
